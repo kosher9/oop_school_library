@@ -2,9 +2,8 @@
 
 ## Build
 
-- built with Ruby
-
-
+- built with Ruby 3.1.2p20
+- OS Ubuntu 20.04 LTS
 
 ## Authors
 
@@ -13,12 +12,6 @@
 - GitHub: [@kosher9](https://github.com/kosher9)
 - Twitter: [@kosherus](https://twitter.com/kosherus)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/lionel-c%C3%A9dric-kossi-323042172)
-
-👤 **Misheck Livingi**
-
-- GitHub: [@githubhandle](https://github.com/misheck12)
-- Twitter: [@twitterhandle](https://twitter.com/mishecklivingi2)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/misheck-livingi-a0b536142/)
 
 ## 🤝 Contributing
 
