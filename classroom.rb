@@ -8,6 +8,6 @@ class Classroom
   end
 
   def add_student(student)
-    @students << student
+    @students << student unless @students.include?(student)
   end
 end
