@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 require './app'
+require 'pry'
+
 def create_student(app)
   puts 'Let\'s create a student!'
   puts 'What is your name?'
@@ -133,4 +135,5 @@ def main
   end
 end
 
+binding.pry
 main

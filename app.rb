@@ -51,6 +51,3 @@ class App
     @rentals << Rental.new(book: book, person: person, date: date)
   end
 end
-
-app = App.new
-app.all_book
