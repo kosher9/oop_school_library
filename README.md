@@ -9,7 +9,7 @@
 - First you should have Ruby installed on your computer
 - `git clone https://github.com/kosher9/oop_school_library.git`
 - `cd oop_school_library`
-- Run `Ruby main.rb`
+- Run `ruby main.rb`
 - Follow the steps, enjoy :)
 
 ## Authors
