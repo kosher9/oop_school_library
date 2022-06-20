@@ -135,5 +135,6 @@ def main
   end
 end
 
-binding.pry
+
 main
+binding.pry
