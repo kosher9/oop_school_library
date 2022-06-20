@@ -6,9 +6,10 @@
 - OS Ubuntu 20.04 LTS
 
 ## How to run it
+- First you should have Ruby installed on your computer
 - `git clone https://github.com/kosher9/oop_school_library.git`
 - `cd oop_school_library`
-- In your console run `Ruby main.rb`
+- Run `Ruby main.rb`
 - Follow the steps, enjoy :)
 
 ## Authors
