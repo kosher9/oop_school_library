@@ -4,7 +4,6 @@ require './handle_book'
 require './handle_rental'
 
 class Input
-
   def self.list_options(app, input)
     puts input
     case input

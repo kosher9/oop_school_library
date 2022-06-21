@@ -1,5 +1,4 @@
 class HandleBook
-
   def self.create_book(app)
     puts 'What is the book\'s title?'
     title = gets.chomp
@@ -8,5 +7,4 @@ class HandleBook
     app.create_book(title: title, author: author)
     puts 'Book created!'
   end
-
 end

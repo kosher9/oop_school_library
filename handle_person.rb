@@ -1,5 +1,4 @@
 class HandlePerson
-
   def self.create_student(app)
     puts 'Let\'s create a student!'
     puts 'What is your name?'
@@ -23,5 +22,4 @@ class HandlePerson
     app.create_teacher(specialization: specialization, age: age, name: name, parent_permission: true)
     puts 'Teacher created!'
   end
-
 end
