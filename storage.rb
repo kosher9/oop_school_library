@@ -20,7 +20,8 @@ class Storage
     return unless File.file?('books.json')
     book_file = File.open('books.json', 'w')
     app.books.each do |book|
-      book_file.write(JSON.generate(book))
+      # book_file.write(JSON.generate(book))
+      puts(JSON.generate(book))
     end
     book_file.close
   end
