@@ -13,15 +13,15 @@ class Book
     @rentals << rental
   end
 
-  def to_json
-    JSON.dump ({
-      :title => @title,
-      :author => @author
-    })
+  def to_json(*_args)
+    JSON.dump({
+                title: @title,
+                author: @author
+              })
   end
 
   def self.from_json(string)
-    data = JSON.load string
-    self.new(title: data['title'], author: data['author'])
+    data = JSON.parse string
+    new(title: data['title'], author: data['author'])
   end
 end
