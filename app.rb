@@ -52,22 +52,25 @@ class App
     @rentals << Rental.new(book: book, person: person, date: date)
   end
 
+  # For test purpose
   def books_to_json
     @books.each { |book| puts JSON.generate(book) }
   end
 
+  # For test purpose
   def people_to_json
     @people.each { |person| puts JSON.generate(person) }
   end
 
+  # For test purpose
   def rentals_to_json
     @rentals.each { |rental| puts JSON.generate(rental) }
   end
 
-  def json_to_books
-
+  # For test purpose
+  def clear_data
+    @people = []
+    @rentals = []
+    @books = []
   end
 end
-
-app = App.new
-app.all_book

@@ -8,4 +8,12 @@ class Rental
     @book = book
     book.add_rental(self)
   end
+
+  def to_json(*_args)
+    JSON.dump({
+                date: @date,
+                person: @person,
+                book: @book
+              })
+  end
 end
