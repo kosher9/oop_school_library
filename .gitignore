@@ -1,4 +1,4 @@
 .idea
-./people.json
-./books.json
-./rental.rb
+people.json
+books.json
+rentals.json
