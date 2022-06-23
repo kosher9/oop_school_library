@@ -21,7 +21,6 @@ def main
     Input.check_input(app, input)
   end
   storage.save_all_data(app)
-
 end
 
 main
