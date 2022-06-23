@@ -13,7 +13,7 @@ describe Book do
 
   describe '#title' do
     it 'returns the correct title' do
-      @book.title.should == "Love"
+      @book.title.should == 'Love'
     end
   end
 

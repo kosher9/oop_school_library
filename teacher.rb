@@ -1,4 +1,5 @@
 require './person'
+
 class Teacher < Person
   attr_reader :specialization, :age, :name, :parent_permission, :id
 

@@ -43,7 +43,8 @@ class App
   end
 
   def create_teacher(id:, specialization:, age:, name:, parent_permission: true)
-    @people << Teacher.new(id: id, specialization: specialization, age: age, name: name, parent_permission: parent_permission)
+    @people << Teacher.new(id: id, specialization: specialization, age: age, name: name,
+                           parent_permission: parent_permission)
   end
 
   def create_rental(book:, person:, date:)

@@ -13,7 +13,7 @@ class Person < Nameable
     @rentals = []
   end
 
-  def to_json(*args)
+  def to_json(_args)
     JSON.dump({
                 id: @id,
                 name: @name,
@@ -40,5 +40,4 @@ class Person < Nameable
   def of_age?
     @age >= 18
   end
-
 end
