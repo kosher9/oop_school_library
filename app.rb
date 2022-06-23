@@ -6,6 +6,7 @@ require './book'
 
 class App
   attr_reader :books, :people, :rentals
+  attr_accessor :love
 
   def initialize
     @books = []
@@ -26,12 +27,10 @@ class App
   end
 
   def all_rentals(id)
-    @people.each do |person|
-      next unless person.id == id
+    @rentals.each do |rental|
+      next unless rental.person.id == id
 
-      person.rentals.each do |rental|
-        puts "[#{rental.class}] - Book: #{rental.book.title}, Person: #{rental.person.name}, Date: #{rental.date}"
-      end
+      puts "[#{rental.class}] - Book: #{rental.book.title}, Person: #{rental.person.name}, Date: #{rental.date}"
     end
   end
 
@@ -39,18 +38,38 @@ class App
     @books << Book.new(title: title, author: author)
   end
 
-  def create_student(age:, name:, parent_permission: true, classroom: nil)
-    @people << Student.new(age: age, name: name, parent_permission: parent_permission, classroom: classroom)
+  def create_student(id:, age:, name:, parent_permission: true, classroom: nil)
+    @people << Student.new(id: id, age: age, name: name, parent_permission: parent_permission, classroom: classroom)
   end
 
-  def create_teacher(specialization:, age:, name:, parent_permission: true)
-    @people << Teacher.new(specialization: specialization, age: age, name: name, parent_permission: parent_permission)
+  def create_teacher(id:, specialization:, age:, name:, parent_permission: true)
+    @people << Teacher.new(id: id, specialization: specialization, age: age, name: name,
+                           parent_permission: parent_permission)
   end
 
   def create_rental(book:, person:, date:)
     @rentals << Rental.new(book: book, person: person, date: date)
   end
-end
 
-app = App.new
-app.all_book
+  # For test purpose
+  def books_to_json
+    @books.each { |book| puts JSON.generate(book) }
+  end
+
+  # For test purpose
+  def people_to_json
+    @people.each { |person| puts JSON.generate(person) }
+  end
+
+  # For test purpose
+  def rentals_to_json
+    @rentals.each { |rental| puts JSON.generate(rental) }
+  end
+
+  # For test purpose
+  def clear_data
+    @people = []
+    @rentals = []
+    @books = []
+  end
+end

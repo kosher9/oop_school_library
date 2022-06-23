@@ -1,9 +1,13 @@
 #!/usr/bin/env ruby
 require './app'
 require './input'
+require './storage'
 
 def main
   app = App.new
+  storage = Storage.new
+  storage.prepare_storage
+  storage.load_data(app)
   loop do
     puts 'Please choose an option by entering a number'
     puts '1 - List all books'
@@ -16,6 +20,7 @@ def main
     input = gets.chomp.to_i
     Input.check_input(app, input)
   end
+  storage.save_all_data(app)
 end
 
 main
