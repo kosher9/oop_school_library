@@ -1,5 +1,3 @@
-# curriculum-Ruby
-
 ## Build
 
 - built with Ruby 3.1.2p20
