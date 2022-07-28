@@ -22,6 +22,7 @@ def test
   storage.prepare_storage
   storage.save_all_data(app)
   storage.load_data(app)
+
   # binding.pry
   # storage.load_books
   # puts(file_2)

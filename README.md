@@ -1,9 +1,14 @@
-# curriculum-Ruby
-
 ## Build
 
 - built with Ruby 3.1.2p20
 - OS Ubuntu 20.04 LTS
+
+## How to run it
+- First you should have Ruby installed on your computer
+- `git clone https://github.com/kosher9/oop_school_library.git`
+- `cd oop_school_library`
+- Run `ruby main.rb`
+- Follow the steps, enjoy :)
 
 ## Authors
 
