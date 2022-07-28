@@ -1,8 +1,8 @@
 require './person'
 class Student < Person
-  attr_reader :classroom, :age, :name, :parent_permission, :id
+  attr_reader :age, :name, :parent_permission, :classroom, :id
 
-  def initialize(age:, name:, parent_permission:, id: nil, classroom: nil)
+  def initialize(age:, name:, parent_permission:, classroom: nil, id: nil)
     classroom&.add_student(self) unless classroom&.includes?(self)
     @id = id.nil? ? Random.rand(1..1000) : id
     @age = age
